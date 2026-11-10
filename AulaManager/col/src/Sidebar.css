@@ -1,0 +1,173 @@
+.sidebar-container {
+  display: flex;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  transition: width 0.5s;
+  padding-top: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.collapsed {
+  width: 45px;
+}
+
+.sidebar .logo {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.sidebar .logo img {
+  height: 40px;
+}
+
+.sidebar.collapsed .logo img {
+  opacity: 0;
+}
+
+.sidebar .toggle-btn {
+  font-size: 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #f1f1f1;
+}
+
+.sidebar .toggle-btn:hover {
+  color: #ff4d4d;
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+  color: #fff;
+}
+
+.main-content {
+  transition: margin-left 0.5s;
+  padding: 16px;
+  margin-left: 250px;
+}
+
+.main-content.collapsed {
+  margin-left: 45px;
+}
+
+.sidebar-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #333;
+  color: #f1f1f1;
+  margin-bottom: 10px;
+  position: fixed;
+  bottom: 10px;
+}
+
+.sidebar-user button {
+  background: none;
+  border: none;
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+.sidebar-user button:hover {
+  color: #ff4d4d;
+}
+
+.sidebar-item {
+  position: relative;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.sidebar-item button {
+  background: none;
+  border: none;
+  color: #f1f1f1;
+  font-size: 18px;
+  text-align: left;
+  width: 100%;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar-item button span {
+  margin-left: 10px;
+}
+
+.sidebar-item button:hover {
+  background-color: #575757;
+}
+
+.sidebar-item ul {
+  list-style-type: none;
+  padding-left: 30px;
+  display: none;
+  margin: 0;
+}
+
+.sidebar-item.expanded ul {
+  display: block;
+}
+
+.sidebar-item ul.collapsed {
+  display: none;
+}
+
+.sidebar.collapsed .sidebar-item button span {
+  display: none;
+}
+
+.sidebar.collapsed .sidebar-footer span {
+  display: none;
+}
+
+.sidebar.collapsed .sidebar-footer {
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar.collapsed .toggle-btn {
+  position: fixed;
+  z-index: 1100;
+}
+
+.sidebar .logout-btn {
+  font-size: 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #f1f1f1;
+  margin-left: 50px;
+}
+
+.sidebar.collapsed .logout-btn {
+  position: fixed;
+  z-index: 1100;
+  margin-left: 0px;
+}

@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.homepage-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #004080;
+  padding: 15px 20px;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.homepage-header .logo {
+  height: 50px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+.navbar .login-btn {
+  background-color: #ffcc00;
+  color: #004080;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar .login-btn:hover {
+  background-color: #fff;
+  color: #004080;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 64, 128, 0.7), rgba(0, 64, 128, 0.7)),
+    url("../src/images/logo_uvt_mare.png") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.hero-content .cta-btn {
+  background-color: #ffcc00;
+  padding: 12px 24px;
+  text-decoration: none;
+  color: #004080;
+  border-radius: 25px;
+  font-size: 1.1em;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-content .cta-btn:hover {
+  background-color: #fff;
+  color: #004080;
+}
+
+.about-platform,
+.user-features {
+  padding: 60px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.about-platform h2,
+.user-features h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #004080;
+}
+
+.about-platform p {
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #555;
+}
+
+.user-features {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.features-carousel {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; /* Aliniere verticală la mijloc */
+  margin-top: 40px;
+}
+
+.feature-category {
+  width: 45%; /* Lățime fixă pentru fiecare categorie */
+}
+
+.feature-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: left;
+  max-height: 300px; /* Înălțime maximă pentru a preveni modificările */
+  overflow: auto; /* Adaug scrolling vertical dacă este necesar */
+}
+
+.feature-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #004080;
+}
+
+.feature-card p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+.feature-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.carousel-controls button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.carousel-controls button:hover {
+  color: #ffcc00;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.carousel-indicators div {
+  width: 10px;
+  height: 10px;
+  background-color: #004080;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel-indicators div.active {
+  background-color: #ffcc00;
+}
+
+.homepage-footer {
+  background-color: #004080;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: #ffcc00;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.social-media a {
+  color: #ffcc00;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.5em;
+  transition: color 0.3s;
+}
+
+.social-media a:hover {
+  color: #fff;
+}

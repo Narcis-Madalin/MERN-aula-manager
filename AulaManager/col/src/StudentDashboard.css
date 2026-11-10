@@ -1,0 +1,83 @@
+.student-dashboard {
+  padding: 20px;
+}
+
+.dashboard-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.reservations-list {
+  margin-bottom: 40px;
+}
+
+.reservation-card {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.reservation-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.reservation-card.pending {
+  border-left: 5px solid #28a745;
+  margin-bottom: 20px;
+}
+
+.reservation-card.confirmed {
+  border-left: 5px solid #dc3545;
+  margin-bottom: 20px;
+}
+
+.reservation-row {
+  align-items: center;
+}
+
+.reservation-col {
+  margin-right: 80px;
+}
+
+.reservation-card .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.reservation-card .card-text {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.button-col {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.seat-reservation-button {
+  padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+  .reservation-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .button-col {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}

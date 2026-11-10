@@ -1,0 +1,91 @@
+.admin-dashboard-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #343a40;
+}
+
+.admin-dashboard-summary-row {
+  margin-bottom: 20px;
+}
+
+.admin-dashboard-summary-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  padding: 20px;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.admin-dashboard-summary-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.admin-dashboard-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.admin-dashboard-card-text {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.admin-dashboard-summary-card.users {
+  background-color: #17a2b8;
+  margin-right: 20px;
+}
+
+.admin-dashboard-summary-card.reservations {
+  background-color: #28a745;
+  margin-right: 20px;
+}
+
+.admin-dashboard-summary-card.total-rooms {
+  background-color: #ffc107;
+  margin-right: 20px;
+}
+
+.admin-dashboard-summary-card.available-rooms {
+  background-color: #dc3545;
+  margin-right: 20px;
+}
+
+.admin-dashboard-summary-card.students {
+  background-color: #007bff;
+  margin-right: 20px;
+}
+
+.admin-dashboard-summary-card.professors {
+  background-color: #6f42c1;
+  margin-right: 20px;
+}
+
+.admin-dashboard-summary-card.admins {
+  background-color: #fd7e14;
+  margin-right: 20px;
+}
+
+.admin-dashboard-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .admin-dashboard-summary-card {
+    padding: 15px;
+  }
+
+  .admin-dashboard-card-title {
+    font-size: 1.3rem;
+  }
+
+  .admin-dashboard-card-text {
+    font-size: 1rem;
+  }
+}

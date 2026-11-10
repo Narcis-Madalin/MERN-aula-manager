@@ -1,0 +1,143 @@
+.professor-reservations {
+  padding: 20px;
+}
+
+.professor-reservations .dashboard-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.professor-reservations .section-title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.professor-reservations .reservations-list {
+  margin-bottom: 40px;
+}
+
+.professor-reservations .reservation-card {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.professor-reservations .reservation-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.professor-reservations .reservation-card.pending {
+  border-left: 5px solid #28a745;
+  margin-bottom: 20px;
+}
+
+.professor-reservations .reservation-card.confirmed {
+  border-left: 5px solid #dc3545;
+  margin-bottom: 20px;
+}
+
+.professor-reservations .reservation-row {
+  align-items: center;
+}
+
+.professor-reservations .reservation-col {
+  margin-right: 20px; /* Redusă pentru mai mult spațiu */
+}
+
+.professor-reservations .reservation-card .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.professor-reservations .reservation-card .card-text {
+  font-size: 1rem;
+  margin-top: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.professor-reservations .reservation-card .card-text.time-range {
+  display: flex;
+  justify-content: space-between;
+}
+
+.professor-reservations .button-col {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.professor-reservations .seat-reservation-button {
+  padding: 10px 20px;
+}
+
+.professor-reservations .btn-danger {
+  padding: 12px 24px; /* mai mare */
+  font-size: 1rem; /* font mai mare */
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.professor-reservations .btn-secondary {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #007bff;
+  border-color: #007bff; /* albastru pentru border */
+}
+
+.professor-modal .modal-content {
+  font-size: 1.2rem;
+}
+
+.professor-modal .modal-header,
+.professor-modal .modal-footer {
+  padding: 20px;
+}
+
+.professor-modal .modal-title {
+  font-size: 1.5rem;
+}
+
+.professor-modal .modal-body {
+  font-size: 1.2rem;
+}
+
+.professor-modal .modal-footer .btn {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+}
+
+.professor-modal .modal-footer .btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  margin-right: 100px;
+  margin-top: 20px;
+}
+
+.professor-modal .modal-footer .btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.professor-modal .modal-footer .btn-danger:hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+  .professor-reservations .reservation-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .professor-reservations .button-col {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
